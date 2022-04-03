@@ -1,0 +1,29 @@
+/*
+Theme Name: Din
+Theme URI: https://seedwebs.com/package/din/
+Author: Seed Webs
+Author URI: https://seedwebs.com
+Description: Starter FSE WordPress Theme.
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 7.0
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: seed
+Tags: full-site-editing, blog
+
+Din WordPress Theme, (C) 2021 Seed Webs.
+Din is distributed under the terms of the GNU GPL.
+
+
+================================================
+
+This theme use SCSS.
+
+All scss files are located in ./assets/scss/ 
+and compiled to ./assets/css/.
+
+================================================
+
+*/
