@@ -1,0 +1,144 @@
+@charset "utf-8";
+// FROM https://www.joshwcomeau.com/css/custom-css-reset/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+// MORE BY SEEDWEBS.COM
+img {
+  height: auto;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  &:active {
+    opacity: 0.6;
+  }
+}
+table {
+  border-collapse: collapse;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  &:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+// HELPER
+._space {
+  min-height: 1px;
+  margin-bottom: clamp(16px, 3vw, 30px) !important;
+}
+._space_0 {
+  margin-bottom: 0 !important;
+}
+._padding_0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+@media (max-width: 991px) {
+  ._desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  ._mobile {
+    display: none !important;
+  }
+}
+._invisible {
+  visibility: hidden;
+}
+._center {
+  justify-content: center;
+  text-align: center;
+  @media (min-width: 600px) {
+    &.-toright {
+      justify-content: flex-end;
+      text-align: right;
+    }
+    &.-toleft {
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+}
+
+// FONTS
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/notosans-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/notosans-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("../fonts/notosansthai-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("../fonts/notosansthai-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

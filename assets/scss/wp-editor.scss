@@ -1,0 +1,13 @@
+@import "global";
+@media (max-width: 991px) {
+  ._desktop {
+    display: unset !important;
+    opacity: 0.6;
+  }
+}
+@media (min-width: 992px) {
+  ._mobile {
+    display: unset !important;
+    opacity: 0.6;
+  }
+}
