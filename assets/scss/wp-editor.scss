@@ -1,13 +1,21 @@
 @import "global";
-@media (max-width: 991px) {
-  ._desktop {
-    display: unset !important;
-    opacity: 0.6;
+@import "mobile";
+div.wp-site-blocks {
+  @media (max-width: 991px) {
+    ._desktop {
+      display: inherit !important;
+      opacity: 0.3;
+      filter: blur(2px);
+    }
+  }
+  @media (min-width: 992px) {
+    ._mobile {
+      display: inherit !important;
+      opacity: 0.3;
+      filter: blur(2px);
+    }
   }
 }
 @media (min-width: 992px) {
-  ._mobile {
-    display: unset !important;
-    opacity: 0.6;
-  }
+  @import "desktop";
 }

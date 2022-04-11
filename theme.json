@@ -2,68 +2,140 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
-    "appearanceTools": true,
-    "custom": {
-      "button": {
-        "border": {
-          "radius": "6px"
-        }
-      }
+    "spacing": {
+      "blockGap": null
     },
+    "appearanceTools": true,
     "color": {
       "palette": [
-        {
-          "slug": "background",
-          "color": "#ffffff",
-          "name": "Background"
-        },
         {
           "slug": "primary",
           "color": "#b04409",
           "name": "Primary"
         },
         {
-          "slug": "foreground",
+          "slug": "bold",
           "color": "#111111",
+          "name": "Bold"
+        },
+        {
+          "slug": "foreground",
+          "color": "#333333",
           "name": "Foreground"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Background"
         }
       ]
     },
     "layout": {
       "contentSize": "750px",
-      "wideSize": "1100px"
+      "wideSize": "1200px"
     },
     "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"DM Sans\", sans-serif",
+          "slug": "dm-sans",
+          "name": "DM Sans",
+          "fontFace": [
+            {
+              "fontFamily": "DM Sans",
+              "fontDisplay": "swap",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/dmsans-regular.woff2"]
+            },
+            {
+              "fontFamily": "DM Sans",
+              "fontDisplay": "swap",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/dmsans-bold.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "\"Noto Sans\", \"Noto Sans Thai\", sans-serif",
+          "slug": "noto-sans",
+          "name": "Noto Sans (EN-TH)",
+          "fontFace": [
+            {
+              "fontFamily": "Noto Sans",
+              "fontDisplay": "swap",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/notosans-regular.woff2"]
+            },
+            {
+              "fontFamily": "Noto Sans",
+              "fontDisplay": "swap",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/notosans-bold.woff2"]
+            },
+            {
+              "fontFamily": "Noto Sans Thai",
+              "fontDisplay": "swap",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/notosansthai-regular.woff2"]
+            },
+            {
+              "fontFamily": "Noto Sans Thai",
+              "fontDisplay": "swap",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/notosansthai-bold.woff2"]
+            }
+          ]
+        }
+      ],
       "fontSizes": [
         {
           "name": "Small",
-          "size": "16px",
+          "size": "clamp(14px, 2vw, 16px)",
           "slug": "small"
         },
         {
           "name": "Normal",
-          "size": "20px",
+          "size": "clamp(16px, 3vw, 18px)",
           "slug": "normal"
         },
         {
           "name": "Medium",
-          "size": "min(max(32px, 5vw), 42px)",
+          "size": "clamp(18px, 3vw, 22px)",
           "slug": "medium"
         },
         {
           "name": "Large",
-          "size": "min(max(36px, 5vw), 54px)",
+          "size": "clamp(20px, 4vw, 26px)",
           "slug": "large"
         }
       ]
     }
   },
-
   "templateParts": [
     {
       "name": "header",
       "title": "Header",
       "area": "header"
+    },
+    {
+      "name": "content",
+      "title": "Content"
+    },
+    {
+      "name": "loop",
+      "title": "Loop"
     },
     {
       "name": "footer",

@@ -1,0 +1,55 @@
+// FROM https://www.joshwcomeau.com/css/custom-css-reset/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin-bottom: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p {
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+// MORE BY SEEDWEBS.COM
+img {
+  height: auto;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}

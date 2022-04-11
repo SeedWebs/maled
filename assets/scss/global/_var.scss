@@ -1,0 +1,10 @@
+// VAR
+:root {
+  --s-space: 16px;
+  @media (min-width: 768px) {
+    --s-space: 20px;
+  }
+  @media (min-width: 992px) {
+    --s-space: 24px;
+  }
+}
