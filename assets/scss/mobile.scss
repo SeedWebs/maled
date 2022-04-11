@@ -35,3 +35,14 @@ a {
     padding: 0.5em 1em;
   }
 }
+.wp-site-blocks {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  .admin-bar & {
+    height: calc(100% - var(--wp-admin--admin-bar--height));
+  }
+}
+.site-footer {
+  margin-top: auto;
+}

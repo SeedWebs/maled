@@ -68,3 +68,11 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
   margin-right: auto !important;
   width: inherit;
 }
+
+/* FIX BLOCK GAP NAVIGATION */
+.wp-block-navigation,
+.wp-block-navigation .wp-block-page-list,
+.wp-block-navigation__container,
+.wp-block-navigation__responsive-container-content {
+  gap: var(--s-space);
+}
