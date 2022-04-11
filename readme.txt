@@ -15,7 +15,7 @@ Maled is a starter block theme that supports full-site editing. It comes with a 
 
 == Changelog ==
 
-= 1.0.0 =
+= 0.1.0 =
 * Initial release
 
 == Copyright ==
