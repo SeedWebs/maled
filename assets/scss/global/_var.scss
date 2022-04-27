@@ -1,10 +1,15 @@
 // VAR
 :root {
+  --s-gap: 16px;
   --s-space: 16px;
   @media (min-width: 768px) {
+    --s-gap: 20px;
     --s-space: 20px;
   }
   @media (min-width: 992px) {
     --s-space: 24px;
+  }
+  @media (min-width: 1200px) {
+    --s-space: 32px;
   }
 }

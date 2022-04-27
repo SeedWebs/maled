@@ -1,16 +1,28 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"maled","tagName":"header","className":"site-header"} /-->
 <!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
 <main class="wp-block-group">
-	<!-- wp:query {"queryId":0,"query":{"perPage":"6","pages":"1","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null},"displayLayout":{"type":"flex","columns":3},"align":"wide"} -->
+	<!-- wp:cover {"url":"https://seedcdn.com/demo/maled/banner.webp","id":0,"dimRatio":0,"minHeight":480,"align":"full"} -->
+	<div class="wp-block-cover alignfull" style="min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://seedcdn.com/demo/maled/banner.webp" data-object-fit="cover" />
+		<div class="wp-block-cover__inner-container">
+			<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"3rem"}},"textColor":"background"} -->
+			<h2 class="has-text-align-center has-background-color has-text-color" style="font-size:3rem">M A L E D</h2>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"small"} -->
+			<p class="has-text-align-center has-background-color has-text-color has-small-font-size"><strong>FULL SITE EDITING STARTER THEME</strong></p>
+			<!-- /wp:paragraph -->
+		</div>
+	</div>
+	<!-- /wp:cover -->
+	<!-- wp:query {"queryId":0,"query":{"perPage":"4","pages":"1","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null},"displayLayout":{"type":"flex","columns":4},"align":"wide"} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:heading {"textAlign":"center"} -->
 		<h2 class="has-text-align-center">From the blog</h2>
 		<!-- /wp:heading -->
 		<!-- wp:post-template -->
-		<!-- wp:template-part {"slug":"content"} /-->
+		<!-- wp:template-part {"slug":"content-sq","theme":"maled"} /-->
 		<!-- /wp:post-template -->
 	</div>
 	<!-- /wp:query -->
 </main>
 <!-- /wp:group -->
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"maled","tagName":"footer","className":"site-footer"} /-->

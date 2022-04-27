@@ -39,9 +39,19 @@ wp.domReady(() => {
     name: "botom-space",
     label: "Bottom Space",
   });
+  // COVER
+  wp.blocks.registerBlockStyle("core/cover", {
+    name: "botom-space",
+    label: "Bottom Space",
+  });
   // SPACER
   wp.blocks.registerBlockStyle("core/spacer", {
     name: "botom-space",
     label: "Bottom Space",
+  });
+  // QUERY LOOP
+  wp.blocks.registerBlockStyle("core/query", {
+    name: "m2",
+    label: "Mobile 2 Column",
   });
 });

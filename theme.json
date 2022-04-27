@@ -134,6 +134,10 @@
       "title": "Content"
     },
     {
+      "name": "content-sq",
+      "title": "Content (Square Thumbnail)"
+    },
+    {
       "name": "loop",
       "title": "Loop"
     },
